@@ -32,6 +32,7 @@ function tercerLunes() {
     };
 
     console.log(contador)
+    console.log(hora)
     if (contador == 3) {
         chequeador = true;
     };
