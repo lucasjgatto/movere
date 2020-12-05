@@ -35,6 +35,7 @@ function tercerLunes() {
     if (contador == 3) {
         chequeador = true;
     };
+    time = new Date();
 }
 
 function apiZeno() {
