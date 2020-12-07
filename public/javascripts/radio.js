@@ -10,7 +10,7 @@ var time = new Date();
 var fecha = time.getDate();
 var dia = time.getDay();
 var hora = time.getHours();
-var chequeador = false;
+var chequeador = '';
 
 var cancion = "";
 var artista = "";
@@ -46,7 +46,10 @@ function tercerLunes() {
     if (contador == 3) {
         chequeador = true;
     };
+
     time = new Date();
+    console.log("minutos:", time.getMinutes());
+    console.log("segundos:", time.getSeconds());
 }
 
 // function apiZeno() {
@@ -77,26 +80,24 @@ function tercerLunes() {
 
 function enVivo() {
     if ((dia === 1) && (hora >= 9) && (hora < 11)) {
-        infoVivo.innerText = "En vivo: Estoy con vos de 9hs a 11hs";
+        infoVivo.innerText = "EN VIVO:  Estoy con vos";
     } else if (chequeador) {
-        infoVivo.innerText = "En vivo: Serendipia de 16hs a 17hs";
+        infoVivo.innerText = "En vivo:  Serendipia";
     } else if ((dia === 1) && (hora == 21)) {
-        infoVivo.innerText = "En vivo: Doble Juego de 21hs a 23hs";
+        infoVivo.innerText = "EN VIVO:  Doble Juego";
         console.log("SIIII")
     } else if ((dia === 3) && (hora >= 10) && (hora < 12)) {
-        infoVivo.innerText = "En vivo: Ale por la mañana de 10hs a 12hs";
+        infoVivo.innerText = "EN VIVO:  Ale por la mañana";
     } else if ((dia === 5) && (hora >= 9) && (hora < 11)) {
-        infoVivo.innerText = "En vivo: Estoy con vos de 9hs a 11hs";
+        infoVivo.innerText = "EN VIVO:  Estoy con vos";
     } else if ((dia === 5) && (hora == 11)) {
-        infoVivo.innerText = "En vivo: R&R de 11hs a 12hs";
+        infoVivo.innerText = "EN VIVO:  R&R";
     } else if ((dia === 5) && (hora >= 18) && (hora < 20)) {
-        infoVivo.innerText = "En vivo: Emocionados de 18hs a 20hs";
+        infoVivo.innerText = "EN VIVO:  Emocionados";
     } else if ((dia === 5) && (hora == 20)) {
-        infoVivo.innerText = "En vivo: Descarga a tierra de 20hs a 21hs";
+        infoVivo.innerText = "EN VIVO:  Descarga a tierra";
     } else if ((dia === 6) && (hora >= 10) && (hora < 12)) {
-        infoVivo.innerText = "En vivo: Pan y Queso de 10hs a 12hs";
-    } else {
-        infoVivo.innerText = cancion + " - " + artista;
+        infoVivo.innerText = "EN VIVO:  Pan y Queso";
     }
 
 }
@@ -155,8 +156,8 @@ window.addEventListener("load", function() {
     tercerLunes();
     setInterval(tercerLunes, 10000);
 
-    apiZeno();
-    setInterval(apiZeno, 10000);
+    // apiZeno();
+    // setInterval(apiZeno, 10000);
 
 
     enVivo();
