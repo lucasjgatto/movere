@@ -465,7 +465,27 @@ h2,
     color: white !important;
 }
 
+.text-primary {
+    color: #258F8A !important;
+    font-weight: 600 !important;
+    font-size: 4rem;
+    text-transform: none;
+}
+
+a.text-primary:hover,
+a.text-primary:focus {
+    color: #824027 !important;
+}
+
 @media (max-width: 768px) {
+    h1,
+    .h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    .text-primary {
+        font-size: 3rem;
+    }
     h2,
     .h2 {
         font-size: 2.5rem;
@@ -488,6 +508,37 @@ h2,
         width: 30px !important;
         height: 30px;
     } */
+}
+
+@media (max-width: 425px) {
+    h1,
+    .h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+    .text-primary {
+        font-size: 3rem;
+    }
+    h2,
+    .h2 {
+        font-size: 2.5rem;
+    }
+    ol,
+    ul,
+    dl {
+        margin-top: 6px;
+        margin-bottom: 1rem;
+    }
+    .redes div {
+        margin-top: 5px;
+    }
+    .redes a {
+        font-size: 16px;
+        color: white;
+    }
+    .redes a svg {
+        margin-bottom: -2px;
+    }
 }
 
 
@@ -4413,7 +4464,7 @@ input[type=button].btn-block {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 0.5rem 1rem;
 }
 
@@ -9999,18 +10050,6 @@ button.bg-dark:focus {
     color: #fff !important;
 }
 
-.text-primary {
-    color: #258F8A !important;
-    font-weight: 600 !important;
-    font-size: 4rem !important;
-    text-transform: none;
-}
-
-a.text-primary:hover,
-a.text-primary:focus {
-    color: #824027 !important;
-}
-
 .text-secondary {
     color: black !important;
 }
@@ -10338,7 +10377,13 @@ section.resume-section .resume-section-content {
     section.resume-section {
         padding-left: 3rem;
         padding-right: 3rem;
-        padding-top: 5rem;
+        padding-top: 1rem;
         padding-bottom: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section.resume-section {
+        padding-top: 1rem;
     }
 }
