@@ -107,10 +107,10 @@ window.addEventListener("load", function() {
     isMobileTablet();
 
     if (mobile) {
-        play.classList.remove("oculto");
-        pausa.classList.add("oculto");
         volInicial = 1;
     } else {
+        play.classList.add("oculto");
+        pausa.classList.remove("oculto");
         volDown.classList.remove("oculto");
         volUp.classList.remove("oculto");
         audio.play();
