@@ -49,30 +49,31 @@ function tercerLunes() {
     time = new Date();
 }
 
-function apiZeno() {
-    fetch('https://tools.zenoradio.com/api/stations/8ptnyyc6a5zuv/now_playing/')
-        .then(response => {
-            if (response.status === 200) {
-                return response.json();
-            } else {
-                throw new Error('Mal!');
-            }
-        })
-        .then(response => {
-            console.log(response.artist);
-            console.log(response.title);
-            // cancion.innerHTML = response.title;
-            // if (response.artist != 'Unknown') {
-            //     cancion.innerHTML = response.title + ' - ' + response.artist;
-            // } else {
-            //     cancion.innerHTML = response.title;
-            // }
-            cancion = response.title;
-            artista = response.artist;
-        }).catch(error => {
-            console.error(error);
-        })
-}
+// function apiZeno() {
+//     fetch('https://tools.zenoradio.com/api/stations/8ptnyyc6a5zuv/now_playing/')
+//         .then(response => {
+//             if (response.status === 200) {
+//                 return response.json();
+//             } else {
+//                 throw new Error('Mal!');
+//             }
+//         })
+//         .then(response => {
+//             console.log(response.artist);
+//             console.log(response.title);
+//             // cancion.innerHTML = response.title;
+//             // if (response.artist != 'Unknown') {
+//             //     cancion.innerHTML = response.title + ' - ' + response.artist;
+//             // } else {
+//             //     cancion.innerHTML = response.title;
+//             // }
+//             cancion = response.title;
+//             artista = response.artist;
+
+//         }).catch(error => {
+//             console.error(error);
+//         })
+// }
 
 function enVivo() {
     if ((dia === 1) && (hora >= 9) && (hora < 11)) {
