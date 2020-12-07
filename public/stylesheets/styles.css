@@ -486,6 +486,18 @@ h6,
     color: #f0a142;
 }
 
+.controlesRadio {
+    background-color: #225F71;
+    margin-top: -10px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.carousel-inner {
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
 .lead {
     font-size: 1.25rem;
     font-weight: 300;
