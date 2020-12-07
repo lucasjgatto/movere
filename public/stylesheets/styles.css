@@ -106,6 +106,26 @@ body {
     font-size: 23px;
 }
 
+.redes div {
+    margin-top: 5px;
+}
+
+.redes a {
+    font-size: 30px;
+    color: white;
+}
+
+.redes a svg {
+    color: #f0a142;
+    width: 30px !important;
+    height: 30px;
+}
+
+.redes a:hover {
+    text-decoration: none;
+    color: #f0a142;
+}
+
 .oculto {
     display: none !important;
 }
@@ -456,6 +476,18 @@ h2,
         margin-top: 6px;
         margin-bottom: 1rem;
     }
+    .redes div {
+        margin-top: 5px;
+    }
+    .redes a {
+        font-size: 20px;
+        color: white;
+    }
+    /* .redes a svg {
+        color: #f0a142;
+        width: 30px !important;
+        height: 30px;
+    } */
 }
 
 .mobileFlechita {
@@ -491,22 +523,6 @@ h6,
     margin-top: -10px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-}
-
-.redes a {
-    font-size: 30px;
-    color: white;
-}
-
-.redes a svg {
-    color: #f0a142;
-    width: 30px !important;
-    height: 30px;
-}
-
-.redes a:hover {
-    text-decoration: none;
-    color: #f0a142;
 }
 
 .carousel-inner {
