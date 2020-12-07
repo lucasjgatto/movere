@@ -490,9 +490,10 @@ h2,
     } */
 }
 
-.mobileFlechita {
+
+/* .mobileFlechita {
     font-size: 20px !important;
-}
+} */
 
 h3,
 .h3 {
@@ -4627,9 +4628,9 @@ input[type=button].btn-block {
     .navbar-expand-lg .navbar-toggler {
         display: none;
     }
-    .flechaUp {
+    /* .flechaUp {
         display: none;
-    }
+    } */
 }
 
 @media (max-width: 1199.98px) {
