@@ -5,6 +5,18 @@ var volDown = document.getElementById("volDown");
 var volUp = document.getElementById("volUp");
 var volInicial = 0.4;
 var infoVivo = document.getElementById("infoVivo")
+var navVivo = document.getElementById("BTNvivo");
+var navProgram = document.getElementById("BTNprogram");
+var navNosotros = document.getElementById("BTNnosotros");
+// var navContacto = document.getElementById("BTNcontacto");
+var secVivo = document.getElementById("about");
+var secProgram = document.getElementById("experience");
+var secNosotros = document.getElementById("skills");
+// var secContacto = document.getElementById("interests");
+var aVivo = document.getElementById("aVivo");
+var aProgram = document.getElementById("aProgram");
+var aNosotros = document.getElementById("aNosotros");
+// var aContacto = document.getElementById("aContacto");
 
 var time = new Date();
 var fecha = time.getDate();
@@ -147,6 +159,56 @@ window.addEventListener("load", function() {
         }
         volInicial = audio.volume;
     })
+
+
+    navVivo.addEventListener("click", () => {
+        secVivo.classList.remove("oculto");
+        secProgram.classList.add("oculto");
+        secNosotros.classList.add("oculto");
+        // secContacto.classList.add("oculto");
+        aVivo.classList.add("active");
+        aProgram.classList.remove("active");
+        aNosotros.classList.remove("active");
+        // aContacto.classList.remove("active");
+
+    });
+
+    navProgram.addEventListener("click", () => {
+        secProgram.classList.remove("oculto");
+        secVivo.classList.add("oculto");
+        secNosotros.classList.add("oculto");
+        // secContacto.classList.add("oculto");
+        aVivo.classList.remove("active");
+        aProgram.classList.add("active");
+        aNosotros.classList.remove("active");
+        // aContacto.classList.remove("active");
+
+    });
+
+    navNosotros.addEventListener("click", () => {
+        secNosotros.classList.remove("oculto");
+        secProgram.classList.add("oculto");
+        secVivo.classList.add("oculto");
+        // secContacto.classList.add("oculto");
+        aVivo.classList.remove("active");
+        aProgram.classList.remove("active");
+        aNosotros.classList.add("active");
+        // aContacto.classList.remove("active");
+
+    });
+
+    // navContacto.addEventListener("click", () => {
+    //     secContacto.classList.remove("oculto");
+    //     secProgram.classList.add("oculto");
+    //     secNosotros.classList.add("oculto");
+    //     secVivo.classList.add("oculto");
+    //     aVivo.classList.remove("active");
+    //     aProgram.classList.remove("active");
+    //     aNosotros.classList.remove("active");
+    //     aContacto.classList.add("active");
+
+    // });
+
 
     console.log(fecha);
     console.log(dia);

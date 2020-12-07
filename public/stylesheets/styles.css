@@ -493,6 +493,22 @@ h6,
     border-bottom-right-radius: 25px;
 }
 
+.redes a {
+    font-size: 30px;
+    color: white;
+}
+
+.redes a svg {
+    color: #f0a142;
+    width: 30px !important;
+    height: 30px;
+}
+
+.redes a:hover {
+    text-decoration: none;
+    color: #f0a142;
+}
+
 .carousel-inner {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;

@@ -50,18 +50,18 @@
         </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger active" href="#about">En Vivo</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Programación</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Cortes</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Nosotros</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Contacto</a></li>
+                <li class="nav-item" id="BTNvivo"><a class="nav-link js-scroll-trigger active" id="aVivo" href="#about">En Vivo</a></li>
+                <li class="nav-item" id="BTNprogram"><a class="nav-link js-scroll-trigger" id="aProgram" href="#experience">Programación</a></li>
+                <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Cortes</a></li> -->
+                <li class="nav-item" id="BTNnosotros"><a class="nav-link js-scroll-trigger" id="aNosotros" href="#skills">Nosotros</a></li>
+                <!-- <li class="nav-item" id="BTNcontacto"><a class="nav-link js-scroll-trigger" id="aContacto" href="#interests">Contacto</a></li> -->
                 <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li> -->
             </ul>
         </div>
     </nav>
     <!-- Page Content-->
     <div class="container-fluid p-0">
-        <!-- About-->
+        <!-- EN VIVO-->
         <section class="resume-section" id="about">
             <div class="resume-section-content">
                 <h1 class="mb-0">
@@ -121,11 +121,22 @@
                     <a class="social-icon oculto" id="volUp"><i class="fas fa-volume-up"></i></a>
                     <span id="infoVivo">EN VIVO</span>
                 </div>
+
+                <br>
+                <br>
+                <div class="social-icons redes">
+                    <div><a href="https://www.facebook.com/movereradioonline"><i class="fab fa-facebook-square"></i> Movere Radio Online</a></div>
+                    <div><a href="https://www.instagram.com/movereradio/"><i class="fab fa-instagram"></i> movereradio</a></div>
+                    <div><a href="mailto:movereradioonline@gmail.com"><i class="fas fa-envelope"></i> movereradioonline@gmail.com</a></div>
+                    <!-- <div><a href=""><i class="fab fa-spotify"></i></a></div> -->
+
+
+                </div>
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Experience-->
-        <section class="resume-section" id="experience">
+        <!-- PROGRAMACIÓN-->
+        <section class="resume-section oculto" id="experience">
             <div class="resume-section-content">
                 <h2 class="mb-5"><i class="fas fa-calendar-alt emoticon"></i> Programación</h2>
                 <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
@@ -172,8 +183,8 @@
             </div>
         </section>
         <hr class="m-0" /> -->
-        <!-- Skills-->
-        <section class="resume-section" id="skills">
+        <!-- NOSOTROS-->
+        <section class="resume-section oculto" id="skills">
             <div class="resume-section-content">
                 <h2 class="mb-5"><i class="fas fa-info-circle emoticon"></i> Nosotros</h2>
                 <!-- <div class="subheading mb-3">Movere nace para dar voz a los profesionales del coaching y el desarrollo personal, creando un espacio de interacción y divulgación de las disciplinas que aportan al desarrollo del ser y el bienestar.</div>
@@ -216,15 +227,15 @@
             </div>
         </section>
         <hr class="m-0" />
-        <!-- Interests-->
-        <section class="resume-section" id="interests">
+        <!-- CONTACTO-->
+        <!-- <section class="resume-section oculto" id="interests">
             <div class="resume-section-content">
                 <h2 class="mb-5"><i class="fas fa-envelope emoticon"></i></i> Contacto </h2>
                 <div class="subheading mb-3"><a href="mailto:movereradioonline@gmail.com">movereradioonline@gmail.com
                 </a></div>
             </div>
         </section>
-        <hr class="m-0" />
+        <hr class="m-0" /> -->
         <!-- Awards-->
         <!-- <section class="resume-section" id="awards">
             <div class="resume-section-content">
@@ -266,7 +277,7 @@
     <!-- Jquery-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <!-- JS -->
-    <script src="javascripts/scripts.js"></script>
+    <!-- <script src="javascripts/scripts.js"></script> -->
     <script src="javascripts/radio.js"></script>
 </body>
 
